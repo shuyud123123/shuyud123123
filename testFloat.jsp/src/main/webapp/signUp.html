@@ -1,0 +1,60 @@
+<html>
+<head><title>Sign Up</title></head>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.memberpwd {
+  float: right;
+  padding-top: 16px;
+}
+
+</style>
+<body>
+<form action="signUp.jsp" method="get" style="border:1px solid #ccc">
+  <div class="container">
+    <h1>Sign Up</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="memberid"><b>ID</b></label>
+    <input type="text" placeholder="Enter memberid" name="memberid" required>
+
+    <label for="memberpwd"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="memberpwd" required>
+
+    <div class="clearfix">
+      <button type="submit" class="signupbtn">Sign Up</button>
+      <button type="reset" class="cancelbtn">Cancel</button>
+    </div>
+  </div>
+</form>
+</body>
+</html>
